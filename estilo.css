@@ -1,0 +1,140 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Syne+Mono&display=swap');
+
+body{
+    width: 1397px;
+}
+body div#principal {
+    align-items: left;
+    text-align: left;
+    background:black;
+    padding: 10px 10px 0px 10px;
+    margin: -20px;
+    position:static;
+}
+
+div#corpo{
+    background-color: black;
+    text-align: center;
+    margin: -20px;
+    position:static;
+}
+
+div#corpo_2{
+    background-color: black;
+    text-align: left;
+    margin: -20px;
+    position:initial;
+    color: white;
+}
+
+p#especialista {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-top: -10px;
+    color: white;
+}
+
+p#quemsomos {
+    position: absolute;
+    margin-left: 520px;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+img.FotoKeziaReis{
+    border-radius: 280px;
+    border: 50px #ffffb3; 
+    margin-left: 40px;
+}
+
+img.FotoIndex{
+    border-radius: 180px;
+    border: 50px #ffffb3; 
+    margin-left: 40px;
+}
+
+p#logo {
+    font-family: 'Sofia', cursive;
+    font-size: 50pt;
+    margin: 20px;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-family: 'Sofia', cursive;
+    padding: 20px 20px 20px 20px;
+    margin: -15px;
+    position:static;
+    width: 1392px;
+}
+
+nav#menu {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 510px;
+    color: white;
+    margin-top: 50px;
+    margin-left: -210px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color:black;    
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a{
+    color:white;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.mapa{
+    max-width: 70%;
+    height: 475px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 10px #ffffb3;
+    background-color: black;
+  }
+
+div#mapa {
+    background: black;
+    margin-left: -10px;
+    margin-right: -10px;
+}
