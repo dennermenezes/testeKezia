@@ -1,49 +1,81 @@
 
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-
+/* font-family: 'Sofia', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Syne+Mono&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap'); 
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/* font-family: 'Raleway', sans-serif; */
 
 body{
     width: 1397px;
+    background-color:black;
 }
+
 body div#principal {
     align-items: left;
     text-align: left;
-    background:black;
     padding: 10px 10px 0px 10px;
     margin: -20px;
     position:static;
 }
 
 div#corpo{
-    background-color: black;
+   
     text-align: center;
-    margin: -20px;
-    position:static;
+    width: 100%;
+    max-width: 700px;
+    height: 35vw;
+    max-height: 700px;
+    position: relative;
+
+}
+
+div#corpo img{
+    
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 1000ms ;
+    z-index: 1;
+}
+
+
+#corpo img.selected{
+    
+    border-radius: 20px;    
+    opacity: 1;
 }
 
 div#corpo_2{
-    background-color: black;
     text-align: left;
-    margin: -20px;
+    margin-top: 100px;
     position:initial;
     color: white;
 }
 
 p#especialista {
-    background-color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
-    margin-top: -10px;
+    margin-top: 80px;
     color: white;
+    text-align: center;
 }
 
 p#quemsomos {
     position: absolute;
     margin-left: 520px;
-    background-color: black;
+    margin-top: 100px;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
 }
@@ -54,61 +86,71 @@ img.FotoKeziaReis{
     margin-left: 40px;
 }
 
-img.FotoIndex{
-    border-radius: 180px;
-    border: 50px #ffffb3; 
-    margin-left: 40px;
-}
 
-p#logo {
-    font-family: 'Sofia', cursive;
-    font-size: 50pt;
+/* Logo Kézia Reis e nada mais */
+body p#logo {
     margin: 20px;
-    color: white;
+    margin-left: 100px;
+    text-align: left;
 }
 
-footer {
+/* ******************************************** FIM RODAPE ********************************************** */
+
+/* ******************************************** BOTOES ********************************************** */
+
+body input#dark {
     background-color: black;
-    text-align: center;
-    font-family: 'Sofia', cursive;
-    padding: 20px 20px 20px 20px;
-    margin: -15px;
-    position:static;
-    width: 1392px;
+    color: black;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px;
 }
+
+body input#light {
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px; 
+}
+
+body input#rosa {
+    background-color: #fad0dd;
+    color: #fad0dd;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px;
+}
+
+/* ******************************************** BOTOES ********************************************** */
+
+
+/* ******************************************** MENU PRINCIPAL HOME ********************************************** */
 
 nav#menu {
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 38px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: right;
+
 }
 
 nav#menu ul{
     list-style: none;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     position: absolute;
     top: -20px;
-    left: 510px;
+    left: 690px;
     color: white;
     margin-top: 50px;
-    margin-left: -210px;
+    margin-left: 210px;
 }
 
 nav#menu li{
     display: inline-block;
-    background-color: black;
     color: white;
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
-}
-
-nav#menu li:hover{
-    background-color:black;    
-}
-
-nav#menu h1 {
-    display: none;
 }
 
 nav#menu a{
@@ -122,6 +164,10 @@ nav#menu a:hover{
     text-decoration: underline;
 }
 
+/* ******************************************** MENU PRINCIPAL HOME ********************************************** */
+
+/* ******************************************** MAPA LOCALIZACAO ********************************************** */
+
 .mapa{
     max-width: 70%;
     height: 475px;
@@ -130,11 +176,196 @@ nav#menu a:hover{
     margin-right: auto;
     border-radius: 50px;
     border: 10px #ffffb3;
-    background-color: black;
+    margin-top: 140px;
   }
 
 div#mapa {
-    background: black;
     margin-left: -10px;
     margin-right: -10px;
+}
+
+/* ******************************************** MAPA LOCALIZACAO ********************************************** */
+
+/* ******************************************** MENU DOS TRABALHOS ********************************************** */
+
+nav#menu-trabalhos {
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    text-align: left;
+
+}
+
+nav#menu-trabalhos ul{
+    list-style: none;
+    top: -20px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+nav#menu-trabalhos li{
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu-trabalhos a{
+    color:white;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+nav#menu-trabalhos a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ******************************************** MENU DOS TRABALHOS ********************************************** */
+
+/* ******************************************** MENU FOTOS DOS TRABALHOS ********************************************** */
+
+nav#fotos-trabalhos ul{
+    color: white;
+    margin-top: -10px;
+    margin-left: -50px;
+}
+
+nav#fotos-trabalhos li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav#fotos-trabalhos img{
+    
+    text-align: left;
+    width: 100%;
+    max-width: 270px;
+    height: 22vw;
+    max-height: 270px;
+    position: relative;
+
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+/* ******************************************** MENU FOTOS DOS TRABALHOS ********************************************** */
+
+/* ******************************************** FUNDO INICIAL COM OPACIDADE ********************************************** */
+
+div#corpofundo{
+   
+    margin-top: -505px;
+    text-align: left;
+    width: 100%;
+    max-width: 1400px;
+    height: 35vw;
+    max-height: 1400px;
+    position: absolute;
+
+}
+
+div#corpofundo img{
+    
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1000ms ;
+    z-index: 0;
+}
+
+
+#corpofundo img.selected{
+    
+    opacity: 0.5;
+    filter: blur(6px);
+}
+
+/* ******************************************** FUNDO INICIAL COM OPACIDADE ********************************************** */
+
+/* ******************************************** RODAPE ********************************************** */
+footer {
+    
+    background-color: black;
+    text-align: left;
+    font-family: 'Sofia', cursive;
+    padding: 20px 20px 20px 20px;
+    width: 1370px;
+    margin-top: 100px;
+    color: white;
+
+}
+
+footer a {
+    padding-left: 20px; 
+    color: #825F5F;
+    font-size: 15px;
+}
+
+footer ul {
+    margin-left: 750px;
+    margin-top: 40px;
+
+}
+
+footer p {
+    margin-left: 70px;
+    position: absolute;
+
+}
+
+h1 {
+    color: white;
+}
+
+/* ******************************************** FORMULARIO ********************************************** */
+
+form {
+    background-color: #825F5F;
+    width: 400px;
+    height: 510px;
+    margin-left: 500px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    clear: both;
+    display: table;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    padding-left: 30px;    
+    padding-top: 10px;
+}
+
+form input.email {
+    width: 292px;
+    height: 25px;
+}
+
+form input.name {
+    width: 296px;
+    height: 25px;
+}
+
+form input.celular {
+    width: 287px;
+    height: 25px;
+}
+
+form select {
+    width: 216px;
+    height: 25px;
+}
+
+form textarea {
+    width: 362px;
+    height: 75px;
+}
+
+form input#contato-cliente {
+    background-color: #825F5F;
+    color: #825F5F;
+    border-style: hidden;    
 }

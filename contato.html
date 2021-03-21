@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeziaReis HairStylist</title>
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+</head>
+<body>
+
+    <div id="principal">
+        <header id="cabecalho">
+            <p id="logo">
+                <img src="/logo-preto4.jpg" alt="">
+            </p>    
+
+            <nav id="menu">
+                <ul type="disc">
+
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="local.html">Onde estou</a></li>
+                    <li><a href="contato.html">Fale comigo</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div id="div-formulario">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="form">
+            <section  class="form">
+                <h3>Agende-se conosco</h3><b>
+
+                <input type="hidden" name="accessKey" value="57ffd90d-ab42-4bbb-a0b1-3d29bc4cecda">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html"> <!-- Optional -->
+                <input type="hidden" name="replyTo" value="keziareis27@gmail.com"> <!-- Optional -->
+
+                <label for="nome">Nome: </label>
+                    <input class="name" name="name" placeholder="Nome"><br><br>
+
+                <label for="email">E-mail:</label>
+                    <input class="email" for="email" name="email" placeholder="E-mail"><br><br>
+
+                <label for="celular">Celular:</label>
+                    <input class="celular" for="phone" name="phone" placeholder="Celular"><br><br>
+
+                <label for="Servico">Serviço desejado</label>
+
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option></option>
+                    <option>Mecha</option>
+                    <option>Corte</option>
+                    <option>Penteado</option>
+                    <option>Maquiagem</option>
+                    <option>Progressiva</option>
+                    <option>Mega Hair</option>
+
+                </select><br><br>
+                <label for="mensagem"></label>
+                <textarea class="form-control" class="field" for="assunto" name="message" placeholder="Qual dia e horário deseja agendar"></textarea><br><br>
+
+                <label for="arquivo">Envie uma foto para avaliação </label>
+                <input type="file" name="$myCustomField1" id="arquivo" placeholder="Envie uma foto para avaliação" accept="image/png, image/jpg, image/jpeg"> <br><br>
+
+                <button type="submit" class="btn btn-primary botao">
+                    <span>Enviar</span>
+                </button>
+
+                <input type="text" name="subject" value="Contato de cliente" id="contato-cliente">
+
+            </form>
+            </section>           
+        </form>
+    </div>
+
+    
+</body>
+<footer>
+
+    <p id="logo2">
+        <img src="/logo-preto4.jpg" alt="">
+    </p>  
+
+    <div class="rodape">
+        <ul class="lista-rodape">
+            <a href="https://www.facebook.com/espacokezia.reis/" target="blank">
+                <img src="/facebook.svg" class="face" class="img-fluid">/espacokezia.reis/</a>
+            <a href="https://www.instagram.com/espacokezia.reis/" target="blank">
+                <img src="/instagram-logo.svg" class="insta" class="img-fluid">@espacokezia.reis</a>
+            <a href="https://wa.me/5511996323781" target="blank">
+                <img src="/whatsapp.svg" class="wpp" class="img-fluid">(11) 99632-3781</a>           
+        </ul>
+    </div>
+
+</footer>
+
+</html>
