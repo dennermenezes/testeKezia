@@ -340,7 +340,7 @@ div#mapa {
 
 nav#menu-trabalhos {
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     text-align: left;
 
 }
@@ -375,7 +375,7 @@ nav#menu-trabalhos a:hover{
 
 @media screen and (max-width: 500px) {
     nav#menu-trabalhos {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
