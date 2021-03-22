@@ -1,160 +1,660 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KeziaReis HairStylist</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-<body>
 
-    <div id="principal">
-        <header id="cabecalho">
-            <p id="logo">
-                <img src="logo-preto4.jpg" alt="">
-            </p>    
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+/* font-family: 'Sofia', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Syne+Mono&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap'); 
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+/* font-family: 'Raleway', sans-serif; */
 
-            <nav id="menu">
-                <ul type="disc">
+body{
+    width: 1397px;
+    background-color:black;
+}
 
-                    <li><a href="index.html">Página inicial</a></li>
-                    <li><a href="local.html">Onde estou</a></li>
-                    <li><a href="contato.html">Fale comigo</a></li>
-                    
+/* ****************** CELULAR ******************* */
 
-                    <!-- 
-                    <input type="color" name="colortheme" id="colortheme">
-                    Cor do tema
-                    <input type="button" value="Rosa" id="dark" onclick="finaliza()">
-                    <input type="button" value="Rosa" id="light" onclick="finaliza()">
-                    <input type="button" value="Rosa" id="rosa" onclick="Rosa()">
-                    Cor do tema
-                    -->
+@media screen and (max-width: 500px) {
+    body{
+        width: 500px;
+        background-color:black;
+    }
+}
 
-                </ul>
-            </nav>
-        </header>
-    </div>
 
-    <p id="especialista">
-        "🏅Especialista em deixar sua autoestima renovada ♥️"
-    </p>
+body div#principal {
+    align-items: left;
+    text-align: left;
+    padding: 10px 10px 0px 10px;
+    margin: -20px;
+    position:static;
+}
 
-    <div id="corpo">
+/* ******************************************** FOTOS RODANDO ********************************************** */
+/* ****************** WEB ******************* */
 
-        <img class="selected" src="Kezia Reis (17).png" alt="">
-        <img src="Kezia Reis (1).png" alt="">
-        <img src="Kezia Reis (2).png" alt="">
-        <img src="Kezia Reis (11).png" alt="">
-        <img src="Kezia Reis (12)_.png" alt="">
-        <img src="Kezia Reis (23).png" alt="">
-        <img src="Kezia Reis (24)_.png" alt="">
+div#corpo{
+   
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    height: 35vw;
+    max-height: 700px;
+    position: relative;
 
-    </div>
+}
 
-    <div id="corpofundo">
-
-        <img class="selected" src="Kezia Reis (17).png" alt="">
-        <img src="Kezia Reis (1).png" alt="">
-        <img src="Kezia Reis (2).png" alt="">
-        <img src="Kezia Reis (11).png" alt="">
-        <img src="Kezia Reis (12)_.png" alt="">
-        <img src="Kezia Reis (23).png" alt="">
-        <img src="Kezia Reis (24)_.png" alt="">
-
-    </div>
-
-    <div id="div-lista-trabalhos">
-
-        <nav id="menu-trabalhos">
-            <ul type="disc">
-
-                <li><a href="index.html">Mechas</a></li>
-
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="mechas1.jpeg" alt=""></li>
-                            <li><img src="mechas2.jpeg" alt=""></li>
-                            <li><img src="mechas3.jpeg" alt=""></li>
-                            <li><img src="mechas5.jpeg" alt=""></li>
-                        </ul>
-                    </nav>
-
-                <li><a href="trabalhos.html">Cortes</a></li>
-
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="corte 9.jpeg" alt=""></li>
-                            <li><img src="corte4.jpeg" alt=""></li>
-                            <li><img src="corte5.jpeg" alt=""></li>
-                            <li><img src="corte 8.jpeg" alt=""></li>
-                        </ul>
-                    </nav>
-
-                <li><a href="kezia.html">Penteados</a></li>
- 
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="penteado1.jpeg" alt=""></li>
-                            <li><img src="penteado2.jpeg" alt=""></li>
-                            <li><img src="penteado3.jpeg" alt=""></li>
-                            <li><img src="penteado4.jpeg" alt=""></li>
-                        </ul>
-                    </nav>
-                
-                <li><a href="local.html">Maquiagens</a></li>
-  
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="make1.jpeg" alt=""></li>
-                            <li><img src="make2.jpeg" alt=""></li>
-                        </ul>
-                    </nav>
-
-                <li><a href="local.html">Mega Hairs</a></li>
-  
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="mega1.jpeg" alt=""></li>
-                            <li><img src="mega2.jpeg" alt=""></li>
-                            <li><img src="mega3.jpeg" alt=""></li>
-                            <li><img src="mega4.jpeg" alt=""></li>
-                        </ul>
-                    </nav>
-                
-                <li><a href="kezia.html">Biografia</a></li>
-  
-                    <nav id="fotos-trabalhos">
-                        <ul type="disc">
-                            <li><img src="Kezia Reis (19)_.png" alt=""></li>
-                        </ul>
-                    </nav>
-
-            </ul>
-        </nav>
-
-    </div>
-
-    <script src="script.js"></script>
+div#corpo img{
     
-</body>
-<footer id="footer">
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 1000ms ;
+    z-index: 1;
+}
 
-    <p id="logo2">
-        <img src="logo-preto4.jpg" alt="">
-    </p>  
+/* ****************** CELULAR ******************* */
 
-    <div class="rodape">
-        <ul class="lista-rodape">
-            <a href="https://www.facebook.com/espacokezia.reis/" target="blank">
-                <img src="facebook.svg" class="face" class="img-fluid">/espacokezia.reis/</a>
-            <a href="https://www.instagram.com/espacokezia.reis/" target="blank">
-                <img src="instagram-logo.svg" class="insta" class="img-fluid">@espacokezia.reis</a>
-            <a href="https://wa.me/5511996323781" target="blank">
-                <img src="whatsapp.svg" class="wpp" class="img-fluid">(11) 99632-3781</a>           
-        </ul>
-    </div>
+@media screen and (max-width: 500px) {
+    div#corpo {
+        width: 100%;
+        max-width: 300px;
+        height: 40vw;
+        max-height: 300px;
+        margin-left: -60px;
+    }
+}
 
-</footer>
+@media screen and (max-width: 500px) {
+    div#corpo img {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: opacity 1000ms ;
+        z-index: 1;
+    }
+}
 
-</html>
+/* ******************************************** FOTOS RODANDO ********************************************** */
+
+div#corpo img{
+    
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 1000ms ;
+    z-index: 1;
+}
+
+#corpo img.selected{
+    
+    border-radius: 20px;    
+    opacity: 1;
+}
+
+div#corpo_2{
+    text-align: left;
+    margin-top: 100px;
+    position:initial;
+    color: white;
+}
+
+p#especialista {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    p#especialista {
+        font-size: 15px;
+        margin-top: 60px;
+        color: white;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+p#quemsomos {
+    position: absolute;
+    margin-left: 520px;
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    p#quemsomos {
+        position: absolute;
+        margin-left: 260px;
+        margin-top: -20px;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+}
+
+img.FotoKeziaReis{
+    border-radius: 280px;
+    border: 50px #ffffb3; 
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 500px) {
+    img.FotoKeziaReis{
+        border-radius: 280px;
+        border: 50px #ffffb3; 
+        margin-left: 0px;
+        max-width: 250px;
+    }
+}
+
+/* Logo Kézia Reis e nada mais */
+body p#logo {
+    margin: 20px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    body p#logo {
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body p#logo {
+        margin: 15px 15px 15px 15px;
+    }
+}
+
+
+/* ******************************************** FIM RODAPE ********************************************** */
+
+/* ******************************************** BOTOES ********************************************** */
+
+body input#dark {
+    background-color: black;
+    color: black;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px;
+}
+
+body input#light {
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px; 
+}
+
+body input#rosa {
+    background-color: #fad0dd;
+    color: #fad0dd;
+    font-size: 20px;
+    border-color:wheat;
+    border-width: 2px;
+}
+
+/* ******************************************** BOTOES ********************************************** */
+
+
+/* ******************************************** MENU PRINCIPAL HOME ********************************************** */
+
+nav#menu {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-align: right;
+
+}
+
+@media screen and (max-width: 768px) {
+    nav#menu {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    nav#menu {
+        font-size: 15px;
+    }
+}
+
+nav#menu ul{
+    list-style: none;
+    /*text-transform: uppercase;*/
+    position: absolute;
+    top: -20px;
+    left: 690px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
+@media screen and (max-width: 768px) {
+    nav#menu ul {
+        list-style: none;
+        /*text-transform: uppercase;*/
+   
+        top: -20px;
+        left: 90px;
+        color: white;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#menu ul {
+        list-style: none;
+        /*text-transform: uppercase;*/
+
+        top: -20px;
+        left: 90px;
+        color: white;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+}
+
+nav#menu li{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu a{
+    color:white;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ******************************************** MENU PRINCIPAL HOME ********************************************** */
+
+/* ******************************************** MAPA LOCALIZACAO ********************************************** */
+
+.mapa{
+    max-width: 70%;
+    height: 475px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: 10px #ffffb3;
+    margin-top: 140px;
+  }
+
+div#mapa {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    .mapa{
+        max-width: 50%;
+        width: 450px;
+        height: 475px;
+        border-radius: 50px;
+        border: 10px #ffffb3;
+        margin-top: 80px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+    div#mapa {
+        margin-left: -920px;
+        margin-right: -10px;
+    }
+}
+
+/* ******************************************** MAPA LOCALIZACAO ********************************************** */
+
+/* ******************************************** MENU DOS TRABALHOS ********************************************** */
+
+nav#menu-trabalhos {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: left;
+
+}
+
+nav#menu-trabalhos ul{
+    list-style: none;
+    top: -20px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+nav#menu-trabalhos li{
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu-trabalhos a{
+    color:white;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+nav#menu-trabalhos a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    nav#menu-trabalhos {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#menu-trabalhos ul{
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#menu-trabalhos li{
+        padding: 10px;
+        transition: background-color 1s;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#menu-trabalhos a{
+        color:white;
+        margin-left: -50px;
+    }
+}
+
+/* ******************************************** MENU DOS TRABALHOS ********************************************** */
+
+/* ******************************************** MENU FOTOS DOS TRABALHOS ********************************************** */
+/* ****************** WEB ******************* */
+
+nav#fotos-trabalhos ul{
+    color: white;
+    margin-top: -10px;
+    margin-left: -50px;
+}
+
+nav#fotos-trabalhos li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav#fotos-trabalhos img{
+    
+    text-align: left;
+    width: 100%;
+    max-width: 270px;
+    height: 22vw;
+    max-height: 270px;
+    position: relative;
+
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    nav#fotos-trabalhos ul{
+        margin-top: -10px;
+        margin-left: -92px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#fotos-trabalhos li {
+        display: inline-block;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav#fotos-trabalhos img {
+        text-align: left;
+        width: 100%;
+        max-width: 110px;
+        height: 18vw;
+        max-height: 130px;
+        position: relative;
+    
+        object-fit: cover;
+        border-radius: 20px;
+    }
+}
+
+/* ******************************************** MENU FOTOS DOS TRABALHOS ********************************************** */
+
+/* ******************************************** FUNDO INICIAL COM OPACIDADE ********************************************** */
+/* ****************** WEB ******************* */
+
+div#corpofundo{
+   
+    margin-top: -505px;
+    text-align: left;
+    width: 100%;
+    max-width: 1400px;
+    height: 35vw;
+    max-height: 1400px;
+    position: absolute;
+
+}
+
+div#corpofundo img{
+    
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1000ms ;
+    z-index: 0;
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    div#corpofundo {
+        margin-top: -200px;
+        text-align: left;
+        width: 100%;
+        max-width: 1400px;
+        height: 40vw;
+        max-height: 1400px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div#corpofundo img {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1000ms ;
+        z-index: 0;
+    }
+}
+
+#corpofundo img.selected{
+    
+    opacity: 0.5;
+    filter: blur(6px);
+}
+
+/* ******************************************** FUNDO INICIAL COM OPACIDADE ********************************************** */
+
+/* ******************************************** RODAPE ********************************************** */
+footer {
+    
+    background-color: black;
+    text-align: left;
+    font-family: 'Sofia', cursive;
+    padding: 20px 20px 20px 20px;
+    width: 1370px;
+    margin-top: 100px;
+    color: white;
+
+}
+
+footer a {
+    padding-left: 20px; 
+    color: #825F5F;
+    font-size: 15px;
+}
+
+footer ul {
+    margin-left: 750px;
+    margin-top: 40px;
+
+}
+
+footer p {
+    margin-left: 70px;
+    position: absolute;
+
+}
+
+h1 {
+    color: white;
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    footer {
+        padding: 10px 0px 0px 20px;
+        margin-top: 100px;
+        color: white;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer a {
+        color: #825F5F;
+        font-size: 10px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer ul {
+        margin-left: 50px;
+        margin-top: 40px;
+     }
+}
+
+@media screen and (max-width: 500px) {
+    footer p {
+        margin-left: -11px;
+    }
+}
+
+
+/* ******************************************** FORMULARIO ********************************************** */
+
+form {
+    background-color: #825F5F;
+    width: 400px;
+    height: 510px;
+    margin-left: 500px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    clear: both;
+    display: table;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    padding-left: 30px;    
+    padding-top: 10px;
+}
+
+form input.email {
+    width: 292px;
+    height: 25px;
+}
+
+form input.name {
+    width: 296px;
+    height: 25px;
+}
+
+form input.celular {
+    width: 287px;
+    height: 25px;
+}
+
+form select {
+    width: 105px;
+    height: 25px;
+}
+
+form textarea {
+    width: 362px;
+    height: 75px;
+}
+
+form input#contato-cliente {
+    background-color: #825F5F;
+    color: #825F5F;
+    border-style: hidden;    
+}
+
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 400px;
+        height: 510px;
+        margin-left: 25px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    
+        clear: both;
+        display: table;
+        font-family: 'Nunito', sans-serif;
+        font-size: 17px;
+        padding-left: 30px;    
+        padding-top: 10px;
+    }
+}
+
