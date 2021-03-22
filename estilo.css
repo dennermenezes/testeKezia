@@ -19,6 +19,16 @@ body{
     background-color:black;
 }
 
+/* ****************** CELULAR ******************* */
+
+@media screen and (max-width: 500px) {
+    body{
+        width: 500px;
+        background-color:black;
+    }
+}
+
+
 body div#principal {
     align-items: left;
     text-align: left;
@@ -55,7 +65,7 @@ div#corpo img{
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div#corpo {
         width: 100%;
         max-width: 300px;
@@ -65,7 +75,7 @@ div#corpo img{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div#corpo img {
         opacity: 0;
         width: 100%;
@@ -112,9 +122,9 @@ p#especialista {
     text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     p#especialista {
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 60px;
         color: white;
         text-align: left;
@@ -130,7 +140,7 @@ p#quemsomos {
     font-size: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     p#quemsomos {
         position: absolute;
         margin-left: 260px;
@@ -146,7 +156,7 @@ img.FotoKeziaReis{
     margin-left: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     img.FotoKeziaReis{
         border-radius: 280px;
         border: 50px #ffffb3; 
@@ -168,7 +178,7 @@ body p#logo {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     body p#logo {
         margin: 15px 15px 15px 15px;
     }
@@ -210,7 +220,7 @@ body input#rosa {
 
 nav#menu {
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
 
 }
@@ -222,7 +232,7 @@ nav#menu {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu {
         font-size: 15px;
     }
@@ -252,7 +262,7 @@ nav#menu ul{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu ul {
         list-style: none;
         /*text-transform: uppercase;*/
@@ -306,7 +316,7 @@ div#mapa {
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .mapa{
         max-width: 50%;
         width: 450px;
@@ -317,7 +327,7 @@ div#mapa {
       }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div#mapa {
         margin-left: -920px;
         margin-right: -10px;
@@ -330,7 +340,7 @@ div#mapa {
 
 nav#menu-trabalhos {
     font-family: 'Raleway', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     text-align: left;
 
 }
@@ -363,27 +373,27 @@ nav#menu-trabalhos a:hover{
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu-trabalhos {
         font-size: 17px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu-trabalhos ul{
         margin-top: 40px;
         margin-left: 10px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu-trabalhos li{
         padding: 10px;
         transition: background-color 1s;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#menu-trabalhos a{
         color:white;
         margin-left: -50px;
@@ -422,21 +432,21 @@ nav#fotos-trabalhos img{
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#fotos-trabalhos ul{
         margin-top: -10px;
         margin-left: -92px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#fotos-trabalhos li {
         display: inline-block;
         padding: 0px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     nav#fotos-trabalhos img {
         text-align: left;
         width: 100%;
@@ -480,7 +490,7 @@ div#corpofundo img{
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div#corpofundo {
         margin-top: -200px;
         text-align: left;
@@ -492,7 +502,7 @@ div#corpofundo img{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     div#corpofundo img {
         opacity: 0;
         position: absolute;
@@ -549,15 +559,16 @@ h1 {
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     footer {
         padding: 10px 0px 0px 20px;
         margin-top: 100px;
         color: white;
+        width: 500px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     footer a {
         color: #825F5F;
         font-size: 10px;
@@ -565,14 +576,14 @@ h1 {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     footer ul {
         margin-left: 50px;
         margin-top: 40px;
      }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     footer p {
         margin-left: -11px;
     }
@@ -630,7 +641,7 @@ form input#contato-cliente {
 
 /* ****************** CELULAR ******************* */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     form {
         width: 400px;
         height: 510px;
